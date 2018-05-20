@@ -67,7 +67,6 @@
 				8F39FAAF20889BEE0039986A /* LaunchScreen.storyboard */,
 				8F39FAB220889BEE0039986A /* Info.plist */,
 			);
-			name = DiDiWork;
 			path = DiDiWork;
 			sourceTree = "<group>";
 		};
@@ -285,7 +284,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7V95CL2HEK;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DiDiWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = babanggi.com.LoginRegisterPHP;
@@ -302,7 +301,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7V95CL2HEK;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DiDiWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = babanggi.com.LoginRegisterPHP;
