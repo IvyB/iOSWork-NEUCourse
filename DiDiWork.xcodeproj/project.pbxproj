@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		8F27F6F6208993B700944A68 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		8F27F6F820899F3200944A68 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		8F39FAA320889BEE0039986A /* LoginRegisterSimple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginRegisterSimple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F39FAA320889BEE0039986A /* DiDiWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiDiWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F39FAA620889BEE0039986A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F39FAA820889BEE0039986A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8F39FAAB20889BEE0039986A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		8F39FA9A20889BEE0039986A = {
 			isa = PBXGroup;
 			children = (
-				8F39FAA520889BEE0039986A /* LoginRegisterSimple */,
+				8F39FAA520889BEE0039986A /* DiDiWork */,
 				8F39FAA420889BEE0039986A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +50,12 @@
 		8F39FAA420889BEE0039986A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8F39FAA320889BEE0039986A /* LoginRegisterSimple.app */,
+				8F39FAA320889BEE0039986A /* DiDiWork.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8F39FAA520889BEE0039986A /* LoginRegisterSimple */ = {
+		8F39FAA520889BEE0039986A /* DiDiWork */ = {
 			isa = PBXGroup;
 			children = (
 				8F39FAA620889BEE0039986A /* AppDelegate.swift */,
@@ -67,15 +67,16 @@
 				8F39FAAF20889BEE0039986A /* LaunchScreen.storyboard */,
 				8F39FAB220889BEE0039986A /* Info.plist */,
 			);
-			path = LoginRegisterSimple;
+			name = DiDiWork;
+			path = DiDiWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8F39FAA220889BEE0039986A /* LoginRegisterSimple */ = {
+		8F39FAA220889BEE0039986A /* DiDiWork */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F39FAB520889BEE0039986A /* Build configuration list for PBXNativeTarget "LoginRegisterSimple" */;
+			buildConfigurationList = 8F39FAB520889BEE0039986A /* Build configuration list for PBXNativeTarget "DiDiWork" */;
 			buildPhases = (
 				8F39FA9F20889BEE0039986A /* Sources */,
 				8F39FAA020889BEE0039986A /* Frameworks */,
@@ -85,9 +86,9 @@
 			);
 			dependencies = (
 			);
-			name = LoginRegisterSimple;
-			productName = LoginRegisterSimple;
-			productReference = 8F39FAA320889BEE0039986A /* LoginRegisterSimple.app */;
+			name = DiDiWork;
+			productName = DiDiWork;
+			productReference = 8F39FAA320889BEE0039986A /* DiDiWork.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -106,7 +107,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8F39FA9E20889BEE0039986A /* Build configuration list for PBXProject "LoginRegisterSimple" */;
+			buildConfigurationList = 8F39FA9E20889BEE0039986A /* Build configuration list for PBXProject "DiDiWork" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,7 +120,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8F39FAA220889BEE0039986A /* LoginRegisterSimple */,
+				8F39FAA220889BEE0039986A /* DiDiWork */,
 			);
 		};
 /* End PBXProject section */
@@ -285,7 +286,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7V95CL2HEK;
-				INFOPLIST_FILE = LoginRegisterSimple/Info.plist;
+				INFOPLIST_FILE = DiDiWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = babanggi.com.LoginRegisterPHP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,7 +303,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7V95CL2HEK;
-				INFOPLIST_FILE = LoginRegisterSimple/Info.plist;
+				INFOPLIST_FILE = DiDiWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = babanggi.com.LoginRegisterPHP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -315,7 +316,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8F39FA9E20889BEE0039986A /* Build configuration list for PBXProject "LoginRegisterSimple" */ = {
+		8F39FA9E20889BEE0039986A /* Build configuration list for PBXProject "DiDiWork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F39FAB320889BEE0039986A /* Debug */,
@@ -324,7 +325,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F39FAB520889BEE0039986A /* Build configuration list for PBXNativeTarget "LoginRegisterSimple" */ = {
+		8F39FAB520889BEE0039986A /* Build configuration list for PBXNativeTarget "DiDiWork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F39FAB620889BEE0039986A /* Debug */,
