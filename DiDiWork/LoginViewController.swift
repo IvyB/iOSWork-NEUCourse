@@ -21,12 +21,17 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonTapped(_ sender: Any) {
+        let username = emailTP.text
+        let password = passwordTP.text
         
-        let storedEmail = UserDefaults.standard.string(forKey: "email")
-        let storedPassword = UserDefaults.standard.string(forKey: "password")
+        if((username?.isEmpty)! || (password?.isEmpty)!) {
+            displayAlertMessage(userMessage: "请填写所有信息")
+            return
+        }
         
-        if (emailTP.text == storedEmail && passwordTP.text == storedPassword) {
+        if (loginPost(username: username!,password: password!)) {
             UserDefaults.standard.set(true, forKey:"isLoggedIn")
+            UserDefaults.standard.set(username, forKey:"username")
             UserDefaults.standard.synchronize()
             self.dismiss(animated: true, completion:nil);
         } else {
@@ -35,10 +40,35 @@ class LoginViewController: UIViewController {
         
     }
     
-    func displayAlertMessage(userMessage:String) {
-        let myAlert = UIAlertController(title: "Alert", message: userMessage, preferredStyle: UIAlertControllerStyle.alert)
+    func loginPost(username:String, password:String) -> Bool{
+        let url = URL(string: "http://127.0.0.1:8001/login")
+        var request = URLRequest.init(url: url!)
+        request.httpMethod = "POST"
+        let paras  = "username="+username+"&password="+password
+        request.httpBody = paras.data(using: .utf8)
         
-        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+        let session = URLSession.shared
+        let dataTask = session.dataTask(with: request) { (data, respond, error) in
+            if let data = data {
+                
+                if String(data:data,encoding:.utf8) != nil{
+                    //            success(result)
+                }
+                
+            }else {
+                //            failure(error!)
+                
+            }
+        }
+        dataTask.resume()
+        
+        return true
+    }
+    
+    func displayAlertMessage(userMessage:String) {
+        let myAlert = UIAlertController(title: "提示", message: userMessage, preferredStyle: UIAlertControllerStyle.alert)
+        
+        let okAction = UIAlertAction(title: "成功", style: UIAlertActionStyle.default, handler: nil)
         
         myAlert.addAction(okAction)
         self.present(myAlert, animated: true, completion: nil)

@@ -32,7 +32,7 @@ class RegisterPageViewController: UIViewController {
         let username = _emailTP.text
         let password = _passwordTP.text
         let phone = _phoneTP.text
-//        let sex = _sexTP.selectedSegmentIndex
+        //        let sex = _sexTP.selectedSegmentIndex
         let sex = _sexTP.titleForSegment(at: _sexTP.selectedSegmentIndex)!
         
         
@@ -57,8 +57,8 @@ class RegisterPageViewController: UIViewController {
         
         // display alert message with confirmation
         if regPost(username: username!, password: password!, phone: phone!, sex: "\(sex)") {
-            let myAlert = UIAlertController(title: "Alert", message: "注册成功", preferredStyle: UIAlertControllerStyle.alert)
-            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {action in self.dismiss(animated: true, completion:nil)})
+            let myAlert = UIAlertController(title: "提示", message: "注册成功", preferredStyle: UIAlertControllerStyle.alert)
+            let okAction = UIAlertAction(title: "成功", style: UIAlertActionStyle.default, handler: {action in self.dismiss(animated: true, completion:nil)})
             myAlert.addAction(okAction)
             self.present(myAlert, animated: true, completion: nil)
         }
@@ -78,16 +78,16 @@ class RegisterPageViewController: UIViewController {
         
         let session = URLSession.shared
         let dataTask = session.dataTask(with: request) { (data, respond, error) in
-        if let data = data {
-            
-        if String(data:data,encoding:.utf8) != nil{
-//            success(result)
-            
-            }
+            if let data = data {
                 
-        }else {
-//            failure(error!)
-            
+                if String(data:data,encoding:.utf8) != nil{
+                    //            success(result)
+                    
+                }
+                
+            }else {
+                //            failure(error!)
+                
             }
         }
         dataTask.resume()
@@ -96,19 +96,19 @@ class RegisterPageViewController: UIViewController {
     }
     
     
-
-
-func displayAlertMessage(userMessage:String) {
-    let myAlert = UIAlertController(title: "提示", message: userMessage, preferredStyle: UIAlertControllerStyle.alert)
     
-    let okAction = UIAlertAction(title: "成功", style: UIAlertActionStyle.default, handler: nil)
     
-    myAlert.addAction(okAction)
-    self.present(myAlert, animated: true, completion: nil)
+    func displayAlertMessage(userMessage:String) {
+        let myAlert = UIAlertController(title: "提示", message: userMessage, preferredStyle: UIAlertControllerStyle.alert)
+        
+        let okAction = UIAlertAction(title: "成功", style: UIAlertActionStyle.default, handler: nil)
+        
+        myAlert.addAction(okAction)
+        self.present(myAlert, animated: true, completion: nil)
+        
+    }
     
-}
-
-@IBAction func closeRegister(_ sender: Any) {
-    self.dismiss(animated: true, completion: nil)
-}
+    @IBAction func closeRegister(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
