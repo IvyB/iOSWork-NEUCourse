@@ -101,7 +101,7 @@ class RegisterPageViewController: UIViewController {
     func displayAlertMessage(userMessage:String) {
         let myAlert = UIAlertController(title: "提示", message: userMessage, preferredStyle: UIAlertControllerStyle.alert)
         
-        let okAction = UIAlertAction(title: "成功", style: UIAlertActionStyle.default, handler: nil)
+        let okAction = UIAlertAction(title: "好的", style: UIAlertActionStyle.default, handler: nil)
         
         myAlert.addAction(okAction)
         self.present(myAlert, animated: true, completion: nil)

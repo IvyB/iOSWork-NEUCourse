@@ -14,6 +14,8 @@
 		8F39FAAC20889BEE0039986A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F39FAAA20889BEE0039986A /* Main.storyboard */; };
 		8F39FAAE20889BEE0039986A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F39FAAD20889BEE0039986A /* Assets.xcassets */; };
 		8F39FAB120889BEE0039986A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F39FAAF20889BEE0039986A /* LaunchScreen.storyboard */; };
+		F99750A420B2AA0100E1647A /* HelperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99750A320B2AA0100E1647A /* HelperViewController.swift */; };
+		F99750A620B2D8A800E1647A /* NeederViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99750A520B2D8A800E1647A /* NeederViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		8F39FAAD20889BEE0039986A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F39FAB020889BEE0039986A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F39FAB220889BEE0039986A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F99750A320B2AA0100E1647A /* HelperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperViewController.swift; sourceTree = "<group>"; };
+		F99750A520B2D8A800E1647A /* NeederViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeederViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				8F27F6F6208993B700944A68 /* RegisterPageViewController.swift */,
 				8F27F6F820899F3200944A68 /* LoginViewController.swift */,
 				8F39FAAA20889BEE0039986A /* Main.storyboard */,
+				F99750A320B2AA0100E1647A /* HelperViewController.swift */,
+				F99750A520B2D8A800E1647A /* NeederViewController.swift */,
 				8F39FAAD20889BEE0039986A /* Assets.xcassets */,
 				8F39FAAF20889BEE0039986A /* LaunchScreen.storyboard */,
 				8F39FAB220889BEE0039986A /* Info.plist */,
@@ -145,7 +151,9 @@
 				8F27F6F920899F3300944A68 /* LoginViewController.swift in Sources */,
 				8F39FAA920889BEE0039986A /* ViewController.swift in Sources */,
 				8F39FAA720889BEE0039986A /* AppDelegate.swift in Sources */,
+				F99750A620B2D8A800E1647A /* NeederViewController.swift in Sources */,
 				8F27F6F7208993B700944A68 /* RegisterPageViewController.swift in Sources */,
+				F99750A420B2AA0100E1647A /* HelperViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
