@@ -1,5 +1,3 @@
-# 滴滴打人 简单客户端
-
 # 实验目的
 
 根据课上所学的知识，编写一个 iOS 应用。
@@ -25,15 +23,15 @@
 
 界面的设计和交互大量使用 storyboard 绘制。
 
-![2018052315270575286697.png](http://p7jiggt8y.bkt.clouddn.com/2018052315270575286697.png)
+![2018052315270575286697.png](http://td.neu.pw/2018052315270575286697.png)
 
 用 storyboard 实现主要的交互
 
-![20180523152705758442859.png](http://p7jiggt8y.bkt.clouddn.com/20180523152705758442859.png)
+![20180523152705758442859.png](http://td.neu.pw/20180523152705758442859.png)
 
 由于 storyboard 是一直前进的，查阅资料发现正确的关闭窗口的方式是用代码关闭：
 
-```swift
+``` swift
 @IBAction func closeRegister(_ sender: Any) {
     self.dismiss(animated: true, completion: nil)
 }
@@ -41,7 +39,7 @@
 
 如果在 storyboard 上拖拽回上一个界面，会导致重复的叠加视图，几次之后就有可能超内存被杀掉(如下图所示)。
 
-![20180523152705794747562.png](http://p7jiggt8y.bkt.clouddn.com/20180523152705794747562.png)
+![20180523152705794747562.png](http://td.neu.pw/20180523152705794747562.png)
 
 
 
@@ -59,9 +57,7 @@
     @IBOutlet weak var _phoneTP: UITextField!
     @IBOutlet weak var _sexTP: UISegmentedControl!
 ```
-
 进行简单的检验
-
 ```swift
     @IBAction func registerButtonTapped(_ sender: Any) {
         let username = _emailTP.text
@@ -125,11 +121,12 @@ if (loginPost(username: username!,password: password!)) {
         }
 ```
 
+
 ### 后台程序
 
 后台使用 Python 的 Tornado 架构编写，因为原有的 php 后端接口不好适配。登录成功后下发一个 cookie 值。
 
-```python
+``` python
 class LoginHandler(tornado.web.RequestHandler):
     def post(self):
         username = self.get_argument("username")
@@ -213,9 +210,10 @@ viewController 中，先request 请求到这个 html 页面，这里用一个静
 
 
 
+
 # 运行效果
 
-![20180523152705980654218.png](http://p7jiggt8y.bkt.clouddn.com/20180523152705980654218.png)
+![20180523152705980654218.png](http://td.neu.pw/20180523152705980654218.png)
 
 ![image-20180523152030830](/var/folders/cj/5xlctsdn2q9gqj23cj3tqhnr0000gn/T/abnerworks.Typora/image-20180523152030830.png)
 
