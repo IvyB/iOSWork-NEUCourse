@@ -170,9 +170,9 @@ class RegHandler(tornado.web.RequestHandler):
 
 附近人是使用 web view 加载一个网页实现的。
 
-php 后端查数据库得到附近的人，打包成 json 发给前台，渲染成一个 html 文件，swift 将这个网页展示出来。
+Python 后端查数据库得到附近的人，打包成 json 发给前台，渲染成一个 html 文件，swift 将这个网页展示出来。
 
-![20180523152705916452764.png](http://p7jiggt8y.bkt.clouddn.com/20180523152705916452764.png)
+![20180523152705916452764.png](http://td.neu.pw/20180523152705916452764.png)
 
 
 
