@@ -215,11 +215,11 @@ viewController 中，先request 请求到这个 html 页面，这里用一个静
 
 ![20180523152705980654218.png](http://td.neu.pw/20180523152705980654218.png)
 
-![image-20180523152030830](/var/folders/cj/5xlctsdn2q9gqj23cj3tqhnr0000gn/T/abnerworks.Typora/image-20180523152030830.png)
+![image-20180523152030830](http://td.neu.pw/20180523152030830.png)
 
 接口测试
 
-![image-20180523152306452](/var/folders/cj/5xlctsdn2q9gqj23cj3tqhnr0000gn/T/abnerworks.Typora/image-20180523152306452.png)
+![image-20180523152306452](http://td.neu.pw/20180523152306452.png)
 
 # 总结
 
